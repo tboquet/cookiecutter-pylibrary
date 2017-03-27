@@ -3,8 +3,8 @@ Changelog
 
 Use cookiecutter's ``--checkout`` options to use a specific version.
 
-master
-------
+v1.12 (2016-08-20)
+------------------
 
 * Removed all references to Python 2.6 from various config files. Contributed by Lucas Wiman,
   `#48 <https://github.com/ionelmc/cookiecutter-pylibrary/pull/48>`_.
@@ -22,6 +22,14 @@ master
   <https://github.com/ionelmc/cookiecutter-pylibrary/pull/55>`_.
 * Changed default options to use templating and reuse the `project_name`. Contributed by Christoph Sarnowski in `#56
   <https://github.com/ionelmc/cookiecutter-pylibrary/pull/56>`_.
+* Extended default coverage reporting to include tests.
+* Fixed trailing newline. Contributed in `#67 <https://github.com/ionelmc/cookiecutter-pylibrary/pull/67>`_.
+* Fixed missing ``console_scripts`` entrypoint and improve nose configuration. Contributed by Laurent Laporte in `#64
+  <https://github.com/ionelmc/cookiecutter-pylibrary/pull/64>`_.
+* Improved code style in a bunch of files. Contributed by Laurent Laporte in `#62
+  <https://github.com/ionelmc/cookiecutter-pylibrary/pull/62>`_.
+* Fixed coverage combining in coveralls/codecov tox envs. Now append mode is used, to avoid discarding coverage data.
+
 
 v1.11 (2016-01-05)
 ------------------
@@ -130,7 +138,7 @@ v1.2 (2015-04-11)
 v1.1 (2015-03-28)
 -----------------
 
-* Added support for `nose <http://nose.readthedocs.org/>`_ test runner. Contributed by Alexander Artemenko, `#8
+* Added support for `nose <http://nose.readthedocs.io/>`_ test runner. Contributed by Alexander Artemenko, `#8
   <https://github.com/ionelmc/cookiecutter-pylibrary/issues/8>`_ `#9
   <https://github.com/ionelmc/cookiecutter-pylibrary/pull/9>`_.
 * Strip all text roles from ``long_description`` in ``setup.py``.

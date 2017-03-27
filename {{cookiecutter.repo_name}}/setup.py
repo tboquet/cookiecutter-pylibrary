@@ -76,6 +76,7 @@ class optional_build_ext(build_ext):
         print('    ' + repr(e))
         print('*' * 80)
 
+
 {% endif -%}
 {% endif -%}
 setup(
@@ -109,6 +110,7 @@ setup(
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy',
         # uncomment if you test on these interpreters:
@@ -137,7 +139,7 @@ setup(
         'cython',
     ] if Cython else [],
 {%- endif %}
-{%- if cookiecutter.command_line_interface|lower in ['plain', 'click'] %}
+{%- if cookiecutter.command_line_interface|lower != 'no' %}
     entry_points={
         'console_scripts': [
             '{{ cookiecutter.command_line_interface_bin_name }} = {{ cookiecutter.package_name|replace('-', '_') }}.cli:main',
