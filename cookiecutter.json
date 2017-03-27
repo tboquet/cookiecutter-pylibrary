@@ -1,9 +1,9 @@
 {
     "full_name": "Thomas Boquet",
-    "email": "thomas.boquet@hec.ca",
-    "website": "https://tboquet.github.io",
+    "email": "thomas@elementai.com",
+    "website": "http://elementai.com",
     "github_username": "tboquet",
-    "project_name": "Nameless",
+    "project_name": "genmodels-benchmark-models",
     "repo_name": "python-{{ cookiecutter.project_name|lower|replace(' ','-') }}",
     "package_name": "{{ cookiecutter.project_name|lower|replace(' ','_')|replace('-','_') }}",
     "distribution_name": "{{ cookiecutter.package_name|replace('_','-') }}",
